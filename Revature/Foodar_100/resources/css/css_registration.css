@@ -1,0 +1,132 @@
+/* webkit browser styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Universal Styles */
+html {
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	color: maroon;
+	background-color: goldenrod;
+}
+
+.banner {
+    width: 100%;
+    height: 4em;
+    background-color: antiquewhite;
+}
+
+.inline-b{
+    display: inline-block;
+}
+
+label{
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.spacer {
+    width: 100%;
+    height: 4px;
+    color: antiquewhite;
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
+input{
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* Icon Styles */
+.icon {
+}
+
+i {
+    margin: 0 4px;
+}
+
+
+/* Body Styles */
+body {
+	margin: 0, auto;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+.details{
+    justify-content: center;
+    width: 363px;
+}
+    .details p.deet {
+        padding-left: 40px;
+    }
+    .details input{
+        width: 100%;
+    }
+
+.form{
+	display: inline-block;
+    padding-left: 100px;
+}
+form.name{
+    padding-top: 8px;
+}
+
+.address{
+
+}
+    .address p.deet{
+        padding-left: 40px;
+    }
+    .address input{
+        width: 100%;
+    }
+
+.street input{
+    width: 100%;
+}
+.city {
+    padding-top: 8px;
+}
+.state {
+    padding-top: 8px;
+}
+.zip{
+    padding-top: 8px;
+}
+
+.button{
+    padding-top: 8px;
+    padding-left: 100px;
+}
+
+/* Footer Styles */
+footer {
+}
+
+    footer ul {
+        list-style: none;
+        line-height: 40px;
+        padding: 0px;
+    }
+
+        footer ul a {
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+            footer ul a:hover {
+                color: maroon;
+            }
+.spacer.footer{
+    margin-top: 40px;
+}

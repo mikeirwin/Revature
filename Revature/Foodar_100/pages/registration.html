@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/css_registration.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="heading inline-b">
+        <h1>Foodar <i class="fas fa-hamburger" style="color:maroon;"></i></h1>
+    </div>
+    <div class="spacer"></div>
+    <br />
+    <h2>Register</h2>
+    <div class="details">
+        <p>Please fill out the form below:</p>
+        <p class="deet">Details:</p>
+
+        <div class="form">
+            <form method="post">
+                <label>Email: </label><input type="email" name="email" title="E-mail" placeholder="" autocomplete="on" required />
+                <label>Password: </label><input type="password" name="password" title="Password" required />
+            </form>
+            <form class="name" method="get">
+                <label>First Name: </label><input type="text" name="firstname" title="First Name" autocomplete="on" required />
+                <label>Last Name: </label><input type="text" name="lastname" title="Last Name" autocomplete="on" required />
+            </form>
+        </div>
+
+
+
+    </div>
+    <div class="address">
+        <p class="deet">Address:</p>
+        <div class="form">
+            <form method="post">
+
+                <div class="street">
+                    <label>Street Address: </label>
+                    <input type="text" name="street_address" title="Street Address" autocomplete="on" required />
+                </div>
+                <div class="city">
+                    <label>City: </label>
+                    <input type="text" name="city" title="City" autocomplete="on" required />
+                </div>
+                <div class="state">
+                    <label>State: </label><input type="text" name="state" title="State" autocomplete="on" required />
+                </div>
+                <div class="zip">
+                    <label>Postode: <input type="number" name="zipcode" title="Zipcode" autocomplete="on" required /></label>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="button">
+        <button>Submit</button>
+    </div>
+    <br />
+    <div class="signin">
+        <p class="deet">Already a member?</p>
+        <div class="button">
+            <button>Sign In</button>
+        </div>
+    </div>
+    <div class="spacer footer"></div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html" target="_self">Home</a>
+            </li>
+            <li>
+                <a href="registration.html" target="_self">Register</a>
+            </li>
+            <li>
+                <a href="about.html" target="_self">About Us</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
