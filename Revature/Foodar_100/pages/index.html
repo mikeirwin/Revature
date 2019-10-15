@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,7 +15,7 @@
     <div class="heading">
         <h1>Foodar <i class="fas fa-hamburger" style="color:maroon;"></i></h1>
         <div class="signin">
-            <a href="#signin" target="_self">Sign-in</a> / <a href="registration.html" target="_self">Register</a>
+            <a href="login.html" target="_self">Sign-in</a> / <a href="registration.html" target="_self">Register</a> / <a href="#">...</a>
         </div>
     </div>
     <div class="spacer"></div>
@@ -30,8 +30,8 @@
     <p>Type in your postcode below and click GO! to find a driver near you.</p>
     <div class="form inline-b">
         <form method="get" autocomplete="on" >
-            <input type="number" pattern="[0-9]+" inputmode="numeric" max-length="5" name="zipcode" title="Zipcode" required/>
-            <button formtarget="_blank">GO!</button>
+            <input type="text" pattern="[0-9]+" maxlength="5" name="zipcode" title="Zipcode" required/>
+            <input type="submit" value="GO!" />
         </form>
     </div>
     <br />

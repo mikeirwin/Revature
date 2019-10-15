@@ -6,6 +6,16 @@
     <title>Register</title>
     <link rel="stylesheet" type="text/css" href="../resources/css/css_registration.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function showPass() {
+            var x = document.getElementById("myPass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="banner"></div>
@@ -16,28 +26,32 @@
     <br />
     <h2>Register</h2>
     <div class="details">
-        <p>Please fill out the form below:</p>
+        <p>Please fill out the form below</p>
         <p class="deet">Details:</p>
 
         <div class="form">
-            <form method="post">
-                <label>Email: </label><input type="email" name="email" title="E-mail" placeholder="" autocomplete="on" required />
-                <label>Password: </label><input type="password" name="password" title="Password" required />
-            </form>
-            <form class="name" method="get">
-                <label>First Name: </label><input type="text" name="firstname" title="First Name" autocomplete="on" required />
-                <label>Last Name: </label><input type="text" name="lastname" title="Last Name" autocomplete="on" required />
-            </form>
-        </div>
-
-
-
-    </div>
-    <div class="address">
-        <p class="deet">Address:</p>
-        <div class="form">
-            <form method="post">
-
+            <form method="post" autocomplete="on">
+                <!--Credentials-->
+                <div class="email">
+                    <label>Email: </label>
+                    <input type="email" name="email" title="E-mail" placeholder="@" required />
+                </div>
+                <div class="password">
+                    <label>Create Password: </label>
+                    <input type="password" name="password" title="Password" id="myPass" class="pass-form" required />
+                </div>
+                <!--checkbox-->
+                <input class="pass-visibility" type="checkbox" title="show password" onclick="showPass()" /><!--Show Password-->
+                <!--ID-->
+                <div class="firstname">
+                    <label>First Name: </label>
+                    <input type="text" name="firstname" title="First Name" autocomplete="on" required />
+                </div>
+                <div class="lastname"></div>
+                <label>Last Name: </label>
+                <input type="text" name="lastname" title="Last Name" autocomplete="on" required />
+        
+                <!--Address-->
                 <div class="street">
                     <label>Street Address: </label>
                     <input type="text" name="street_address" title="Street Address" autocomplete="on" required />
@@ -50,21 +64,19 @@
                     <label>State: </label><input type="text" name="state" title="State" autocomplete="on" required />
                 </div>
                 <div class="zip">
-                    <label>Postode: <input type="number" name="zipcode" title="Zipcode" autocomplete="on" required /></label>
+                    <label>Postode: <input type="text" pattern="[0-9]+" maxlength="5" name="zipcode" title="Zipcode" autocomplete="on" required /></label>
                 </div>
-
+                <br />
+                <input class="submit" type="submit" value="Submit" />
             </form>
         </div>
     </div>
 
-    <div class="button">
-        <button>Submit</button>
-    </div>
     <br />
     <div class="signin">
         <p class="deet">Already a member?</p>
         <div class="button">
-            <button>Sign In</button>
+            <a href="login.html">Sign In</a>
         </div>
     </div>
     <div class="spacer footer"></div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sign In</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/css_login.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function showPass() {
+            var x = document.getElementById("myPass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="banner"></div>
+    <div class="heading inline-b">
+        <h1>Foodar <i class="fas fa-hamburger" style="color:maroon;"></i></h1>
+    </div>
+    <div class="spacer"></div>
+    <br />
+    <div class="login">
+        <h2>Login:</h2>
+        <form method="post" autocomplete="on">
+            <div class="email">
+                <label>Email: </label>
+                <input type="email" name="email" title="E-mail" placeholder="@" required />
+            </div>
+            <div class="password">
+                <label>Password: </label>
+                <input type="password" name="password" title="Password" id="myPass" class="pass-form" required />
+            </div>
+            <!--checkbox-->
+            <input class="pass-visibility" type="checkbox" title="show password" onclick="showPass()" /><!--Show Password-->
+        </form>
+    </div>
+    <br />
+    <br />
+    <div class="spacer"></div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html" target="_self">Home</a>
+            </li>
+            <li>
+                <a href="registration.html" target="_self">Register</a>
+            </li>
+            <li>
+                <a href="about.html" target="_self">About Us</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+<!-- test area -->
+
